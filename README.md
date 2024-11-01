@@ -10,6 +10,8 @@ Você está prestes a explorar o banco de dados da empresa "Momento"! Com essa b
 
 * E quanto ao Departamento de Tecnologia?
 
+#
+
 ### Departamento de Vendas 
 
 * **Quantos funcionários trabalham no Departamento de Vendas?**
@@ -25,12 +27,16 @@ Use uma consulta para descobrir o número total de funcionários alocados nesse 
 
 * Qual é o produto mais caro no inventário da empresa?
 
+#
+
 ### Departamento de Inovações 
 
 * **Um novo departamento foi criado. O departamento de Inovações.** 
 Ele será locado no Brasil. Por favor, adicione-o no banco de dados da empresa colocando quaisquer informações que você achar relevantes.
 
 * O departamento de Inovações está sem funcionários. Inclua alguns colegas de turma nesse departamento.  
+
+#
 
 ### Funcionários
 
@@ -45,6 +51,8 @@ Ele será locado no Brasil. Por favor, adicione-o no banco de dados da empresa c
 * Como a média salarial dos funcionários da "Momento" evoluiu nos últimos anos?
 Dica: utilize a função `AVG()` para calcular a média salarial dos funcionários. e `GROUP BY` para agrupar os resultados por ano.
 
+#
+
 ### Médias salariais
 
 * Qual a média salarial dos funcionários da empresa Momento, excluindo-se o CEO, CMO e CFO?
@@ -55,6 +63,8 @@ Dica: utilize a função `AVG()` para calcular a média salarial dos funcionári
 
 * Qual o departamento com o menor número de funcionários?
 
+#
+
 ### Produtos
 
 * Pensando na relação quantidade e valor unitario, qual o produto mais valioso da empresa?
@@ -62,6 +72,8 @@ Dica: utilize a função `AVG()` para calcular a média salarial dos funcionári
 * Qual o produto mais vendido da empresa?
 
 * Qual o produto menos vendido da empresa?
+
+#
 
 ### Escritórios
 
