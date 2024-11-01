@@ -6,9 +6,30 @@ Você está prestes a explorar o banco de dados da empresa "Momento"! Com essa b
 
 * Inclua suas próprias informações no departamento de Tecnologia da empresa.
 
+R:
+
+Q:
+```sql
+
+```
+
 * Agora diga, quantos funcionários temos ao total na empresa?
 
+R:
+
+Q:
+```sql
+
+```
+
 * E quanto ao Departamento de Tecnologia?
+
+R:
+
+Q:
+```sql
+
+```
 
 #
 
@@ -21,11 +42,43 @@ Use uma consulta para descobrir o número total de funcionários alocados nesse 
 
 * Qual é o custo total dos salários do pessoal de Vendas? Isso nos ajuda a entender o orçamento do departamento!
 
+R:
+
+Q:
+```sql
+
+```
+
+
 * Quanto o departamento de Vendas gasta em salários?
+
+R:
+
+Q:
+```sql
+
+```
+
 
 * Quais são os produtos mais vendidos e quais têm pouca ou nenhuma saída?
 
+R:
+
+Q:
+```sql
+
+```
+
+
 * Qual é o produto mais caro no inventário da empresa?
+
+R:
+
+Q:
+```sql
+
+```
+
 
 #
 
@@ -36,20 +89,68 @@ Ele será locado no Brasil. Por favor, adicione-o no banco de dados da empresa c
 
 * O departamento de Inovações está sem funcionários. Inclua alguns colegas de turma nesse departamento.  
 
+R:
+
+Q:
+```sql
+
+```
+
+
 #
 
 ### Funcionários
 
 * Quantos funcionários da empresa Momento possuem conjuges?
 
+R:
+
+Q:
+```sql
+
+```
+
+
 * Qual o funcionário contratado há mais tempo na empresa?
+
+R:
+
+Q:
+```sql
+
+```
+
 
 * Qual o funcionário contratado há menos tempo na empresa?
 
+R:
+
+Q:
+```sql
+
+```
+
+
 * Quem são os funcionários com mais tempo na empresa, considerando a `data_contratacao`?
+
+R:
+
+Q:
+```sql
+
+```
+
 
 * Como a média salarial dos funcionários da "Momento" evoluiu nos últimos anos?
 Dica: utilize a função `AVG()` para calcular a média salarial dos funcionários. e `GROUP BY` para agrupar os resultados por ano.
+
+R:
+
+Q:
+```sql
+
+```
+
 
 #
 
@@ -57,11 +158,43 @@ Dica: utilize a função `AVG()` para calcular a média salarial dos funcionári
 
 * Qual a média salarial dos funcionários da empresa Momento, excluindo-se o CEO, CMO e CFO?
 
+R:
+
+Q:
+```sql
+
+```
+
+
 * Qual a média salarial do departamento de tecnologia? 
+
+R:
+
+Q:
+```sql
+
+```
+
 
 * Qual o departamento com a maior média salarial?
 
+R:
+
+Q:
+```sql
+
+```
+
+
 * Qual o departamento com o menor número de funcionários?
+
+R:
+
+Q:
+```sql
+
+```
+
 
 #
 
@@ -69,14 +202,47 @@ Dica: utilize a função `AVG()` para calcular a média salarial dos funcionári
 
 * Pensando na relação quantidade e valor unitario, qual o produto mais valioso da empresa?
 
+R:
+
+Q:
+```sql
+
+```
+
+
 * Qual o produto mais vendido da empresa?
 
+R:
+
+Q:
+```sql
+
+```
+
+
 * Qual o produto menos vendido da empresa?
+
+R:
+
+Q:
+```sql
+
+```
+
 
 #
 
 ### Escritórios
 
 * Quantos escritórios a "Momento" possui em cada região? (Dica: relacione as tabelas regioes e escritorios).
+* 
+R:
+
+Q:
+```sql
+
+```
+
+
 
 * Qual é o custo total de suprimentos em cada escritório? Que tal ordenar os resultados para ver qual escritório possui os suprimentos mais caros?
