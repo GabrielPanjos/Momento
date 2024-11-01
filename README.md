@@ -6,29 +6,27 @@ Você está prestes a explorar o banco de dados da empresa "Momento"! Com essa b
 
 * Inclua suas próprias informações no departamento de Tecnologia da empresa.
 
-R:
-
 Q:
 ```sql
-
+INSERT INTO funcionarios(funcionario_id,primeiro_nome,sobrenome,email,senha,telefone,data_contratacao,cargo_id,salario,gerente_id,departamento_id) VALUES (208,'Yago','Gonçalves','franyagoy@gmail.com','yagoat30#@','2054-3750','2024-10-31',20,30.000,NULL,6);
 ```
 
 * Agora diga, quantos funcionários temos ao total na empresa?
 
-R:
+R: No total 42 Funcionários.
 
 Q:
 ```sql
-
+SELECT COUNT(*) FROM momento.funcionarios;
 ```
 
 * E quanto ao Departamento de Tecnologia?
 
-R:
+R: 6 Funcionários trabalham no Departamento de Tecnologia.
 
 Q:
 ```sql
-
+SELECT COUNT(*) FROM momento.funcionarios WHERE departamento_id = 6;
 ```
 
 #
@@ -38,45 +36,55 @@ Q:
 * **Quantos funcionários trabalham no Departamento de Vendas?**
 Use uma consulta para descobrir o número total de funcionários alocados nesse departamento.
 
+R: 5 Funcionários trabalham no Departamento de Vendas.
+
+Q:
+```sql
+SELECT COUNT(*) FROM momento.funcionarios WHERE departamento_id = 8;
+```
+
 * **Salários no Departamento de Vendas**
 
 * Qual é o custo total dos salários do pessoal de Vendas? Isso nos ajuda a entender o orçamento do departamento!
 
-R:
+R: Os salários do pessoal de vendas é de R$51500.00
 
 Q:
 ```sql
-
+SELECT SUM(salario) FROM momento.funcionarios WHERE departamento_id = 8;
 ```
 
 
 * Quanto o departamento de Vendas gasta em salários?
 
-R:
+R: Gastam R$51500.00
 
 Q:
 ```sql
-
+SELECT SUM(salario) FROM momento.funcionarios WHERE departamento_id = 8;
 ```
 
 
 * Quais são os produtos mais vendidos e quais têm pouca ou nenhuma saída?
 
-R:
+R: Os produtos mais vendidos são: Uniforme do Superman e Capacete do Homem Formiga.
+   Os menos vendidos foram o Laço da Honestidade e os Batarangues Oficiais.
 
 Q:
 ```sql
-
+SELECT produto_nome,quantidade FROM momento.vendas
+INNER JOIN produtos ON produtos.produto_id = vendas.produto_id
+ORDER BY quantidade DESC;
 ```
 
 
 * Qual é o produto mais caro no inventário da empresa?
 
-R:
+R: O produto mais caro é o Sabre de Luz do Mace Windu que custa R$990,29
 
 Q:
 ```sql
-
+SELECT * FROM momento.produtos ORDER BY produto_price DESC;
 ```
 
 
@@ -93,7 +101,9 @@ R:
 
 Q:
 ```sql
+INSERT INTO escritorios(escritorio_id,escritorio_nome,endereco,cep,cidade,estado_provincia,pais_id) VALUES (2000,"Estúdio de Inovação",'Senac Lapa Tito','05051-000','São Paulo','São Paulo','BR');
 
+INSERT INTO departamentos(departamento_id,departamento_nome,escritorio_id) VALUES (14,'Inovação',2000);
 ```
 
 
@@ -103,41 +113,42 @@ Q:
 
 * Quantos funcionários da empresa Momento possuem conjuges?
 
-R:
+R: 37 funcionários possuem conjuges.
 
 Q:
 ```sql
-
+SELECT COUNT(*) FROM momento.funcionarios
+INNER JOIN dependentes ON funcionarios.funcionario_id = dependentes.funcionario_id
 ```
 
 
 * Qual o funcionário contratado há mais tempo na empresa?
 
-R:
+R: O funcionário mais velho é Steven Wayne, contratado desde 1987.
 
 Q:
 ```sql
-
+SELECT CONCAT(primeiro_nome, " ", sobrenome) AS nome_funcionario, data_contratacao FROM momento.funcionarios ORDER BY data_contratacao;
 ```
 
 
 * Qual o funcionário contratado há menos tempo na empresa?
 
-R:
+R: O funcionário mais novo é Guga, que foi contratado hoje, 31/10/2024.
 
 Q:
 ```sql
-
+SELECT CONCAT(primeiro_nome, " ", sobrenome) AS nome_funcionario, data_contratacao FROM momento.funcionarios ORDER BY data_contratacao DESC;
 ```
 
 
 * Quem são os funcionários com mais tempo na empresa, considerando a `data_contratacao`?
 
-R:
+R: Steven Wayne e Jennifer Whalen
 
 Q:
 ```sql
-
+SELECT CONCAT(primeiro_nome, " ", sobrenome) AS nome_funcionario, data_contratacao FROM momento.funcionarios ORDER BY data_contratacao;
 ```
 
 
