@@ -1,5 +1,3 @@
-# O momento é agora!
-
 # Momento 
 
 Você está prestes a explorar o banco de dados da empresa "Momento"! Com essa base de dados, vamos treinar consultas SQL e responder algumas perguntas intrigantes que vão revelar como a empresa está organizada. Vamos lá?
